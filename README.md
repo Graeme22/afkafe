@@ -1,5 +1,7 @@
 [![PyPI](https://img.shields.io/pypi/v/afkafe)](https://pypi.org/project/afkafe)
 
+# AFKafé
+
 AFKafé is a simple service that uses pynput to monitor your system activity. If you idle for too long, AFKafé assumes you have entered a catatonic state due to caffeine depravation and quickly orders a random bag of coffee (but never decaf) from [terminal.shop](https://terminal.shop). I pray it reaches you in time.
 
 ## Installation
