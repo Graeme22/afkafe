@@ -21,7 +21,7 @@ jobs:
         uv sync
     - name: Lint with ruff
       run: |
-        uv run ruff check ttcli/
+        uv run ruff check afkafe/
     - name: Type check with pyright
       run: |
-        uv run pyright ttcli/
+        uv run pyright afkafe/

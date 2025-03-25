@@ -1,10 +1,10 @@
-# AFKafé
+[![PyPI](https://img.shields.io/pypi/v/afkafe)](https://pypi.org/project/afkafe)
 
 AFKafé is a simple service that uses pynput to monitor your system activity. If you idle for too long, AFKafé assumes you have entered a catatonic state due to caffeine depravation and quickly orders a random bag of coffee (but never decaf) from [terminal.shop](https://terminal.shop). I pray it reaches you in time.
 
 ## Installation
 
-The best way to install is with `pipx`:
+The best way to install is with [pipx](https://github.com/pypa/pipx):
 
 ```
 $ pipx install afkafe
@@ -58,7 +58,15 @@ And if you're idle for over 5 seconds, you should see this:
 13:25:13: Placed order ord_01JQ78T9TFSEFF96EB8VG120RB
 ```
 
-Now that everything is working, we should configure the script to run in the background. This will differ based on your window manager, a
+After ordering, the service exits since a single bag should be enough to keep you running for a while.
+
+Now that everything is working, you should configure the script to run in the background. There are many ways to do this, but one way is to add this line to your `.xinitrc` file if you're using `startx`:
+
+```
+~/.local/bin/afkafe &
+```
+
+By default, the idle time is 30 minutes before coffee is ordered. That should be appropriate for all you normie programmers, Twitch chatters, and Reddit users out there. Enjoy your coffee and boosted productivity!
 
 ## Supported platforms
 

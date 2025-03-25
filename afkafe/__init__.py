@@ -10,7 +10,7 @@ from typer import Argument, Option, Typer, Exit
 
 from .utils import default_log_config
 
-VERSION = "1.0"
+VERSION = "1.1"
 
 __version__ = VERSION
 
@@ -59,7 +59,7 @@ def main(
     ] = False,
 ) -> None:
     logging.config.dictConfig(default_log_config(verbose))
-    logger.info("Big dict entered the void (of the logging config)")
+    logger.debug("Big dict entered the void (of the logging config)")
     keyboard_listener = keyboard.Listener(on_press=on_event)
     mouse_listener = mouse.Listener(
         on_move=on_event, on_click=on_event, on_scroll=on_event
