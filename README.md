@@ -1,4 +1,5 @@
 [![PyPI](https://img.shields.io/pypi/v/afkafe)](https://pypi.org/project/afkafe)
+[![Downloads](https://static.pepy.tech/badge/afkafe)](https://pepy.tech/project/afkafe)
 
 # AFKafé
 
